@@ -228,6 +228,8 @@ let NERDTreeCascadeOpenSingleChildDir=0
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 
+autocmd FileType markdown match none
+
 if version >= 702
     autocmd BufWinLeave * call clearmatches()
 endif
