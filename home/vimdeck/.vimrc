@@ -27,7 +27,6 @@ Plug 'mxw/vim-jsx', { 'for': ['html', 'javascript'] } " jsx, react
 Plug 'HerringtonDarkholme/yats.vim' " typescript
 Plug 'nono/jquery.vim', { 'for': ['html', 'javascript'] }
 Plug 'elzr/vim-json', { 'for': 'json' }
-Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
 Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'pld-linux/vim-syntax-vcl' " varnish
