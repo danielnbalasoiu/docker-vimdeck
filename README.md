@@ -10,11 +10,24 @@ versions.
 
 ## Usage
 
+Single file with no dependencies:
+
 ```sh
 $ docker run --rm -it -e C_UID=$(id -u) -e C_GID=$(id -g) \
-    -v "./mypresentation.md":"/home/vimdeck/mypresentation.md"
+    -v "$(pwd)/mypresentation.md":"/home/vimdeck/mypresentation.md"
     blackikeeagle/vimdeck
+$ vimdeck mypresentation.md
 ```
 
-You will be dropped in a shell, from there you can run:
-`vimdeck mypresentation.md` and start your slides.
+Presentation with images or other resources:
+
+```sh
+$ ls presentation
+  mypresentation.md someimg.jpg
+
+$ docker run --rm -it -e C_UID=$(id -u) -e C_GID=$(id -g) \
+    -v "$(pwd)/presentation":"/home/vimdeck/presentation"
+    blackikeeagle/vimdeck
+$ cd presentation
+$ vimdeck mypresentation.md
+```
